@@ -1,9 +1,11 @@
 
 
 import Api from "./api";
+
 import ColorChanger from "./Task1/Bgc";
 import Form1 from "./Task1/Form";
 import Input22 from "./Task1/Input";
+import List12 from "./Task2/List";
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
      <Form1/>
 
      <Api/>
+     <br/><br/>
+      <List12/>
     </div>
   );
 }
