@@ -1,5 +1,6 @@
 
 
+import Api from "./api";
 import ColorChanger from "./Task1/Bgc";
 import Form1 from "./Task1/Form";
 import Input22 from "./Task1/Input";
@@ -15,6 +16,8 @@ function App() {
       <Input22/>
       <br/>
      <Form1/>
+
+     <Api/>
     </div>
   );
 }
