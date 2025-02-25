@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react";
 
 const Api = ()=>{
  const [products,setproducts]=useState([])
+ const [loading,setLoading]=useState(true)
  
     useEffect(()=>{
         fetch("https://dummyjson.com/products/2")
@@ -11,13 +12,18 @@ const Api = ()=>{
     },[])
     return(
         <div>
-            <h1>Products List</h1>
-            {products.map((item)=>(
-               <div key={item.id}>
-                <h2>{item.title}</h2>
-                {item.description}
-               </div>
-            ))}
+            {loading ? (<p>Loading...</p>)
+            :(
+                <div>
+                    <h1>{products.title}</h1>
+                    <p>{products.description}</p>
+                    </div>
+            )
+        }
+           
+            
+               
+        
         </div>
 
     )
